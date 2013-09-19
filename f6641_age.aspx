@@ -8,9 +8,9 @@
     <div> <asp:Label ID="lblMath" runat="server" Text=""></asp:Label></div>
     <div>
         <asp:Button ID="Button1" runat="server" Text="< Vuosi" OnClick="Button1_Click" /><asp:Button ID="Button2" runat="server" Text="Vuosi >" OnClick="Button2_Click" /></div>
+    
 
-
-        <asp:Calendar ID="Calendar1" runat="server" Width="775px" OnSelectionChanged="Change" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth">
+        <asp:Calendar ID="Calendar1" runat="server" VisibleDate="" Width="775px" OnSelectionChanged="Change" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth">
         <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
         <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
         <OtherMonthDayStyle ForeColor="#999999" />

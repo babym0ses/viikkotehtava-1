@@ -17,7 +17,8 @@
         
         </asp:ContentPlaceHolder>
     </div>
-        <div><h2>Moosethingys</h2></div>
+       <br/> 
+        <div style="font-family: Kartika; font-size: medium; font-weight: bold;">(c) Moosethingys</div>
     </form>
 </body>
 </html>

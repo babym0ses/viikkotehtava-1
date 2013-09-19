@@ -10,6 +10,7 @@ public partial class f6641_age : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         lblToday.Text = "Tänään on: " + DateTime.Now;
+      
         
         
     }
@@ -22,11 +23,35 @@ public partial class f6641_age : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        
-        Calendar1.VisibleDate = Calendar1.VisibleDate.AddYears(1);
+
+        try
+        {
+            Calendar1.SelectedDate = Calendar1.SelectedDate.Date.AddYears(-1);
+            Calendar1.VisibleDate = Calendar1.SelectedDate;
+        }
+        catch (Exception)
+        {
+            Calendar1.SelectedDate = DateTime.Now;
+            Calendar1.SelectedDate = Calendar1.SelectedDate.Date.AddYears(-1);
+            Calendar1.VisibleDate = Calendar1.SelectedDate;
+
+        }
+      
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
+
+
+        if (Calendar1.SelectedDate == DateTime.MinValue)
+        {
+            Calendar1.SelectedDate = DateTime.Now;
+          
+
+        } 
+
+        
+          Calendar1.SelectedDate = Calendar1.SelectedDate.Date.AddYears(1);
+          Calendar1.VisibleDate = Calendar1.SelectedDate;
 
     }
 }
