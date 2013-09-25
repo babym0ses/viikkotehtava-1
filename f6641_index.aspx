@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div>
         <h1>Tuntitehtävää</h1>
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/f6641_age.aspx">Kalenteri</asp:HyperLink>
+        <asp:HyperLink ID="linkKalenteri" runat="server" NavigateUrl="~/f6641_age.aspx">Kalenteri</asp:HyperLink>
  
     </div>
 
@@ -15,14 +15,16 @@
 
     <div>
         <asp:Label ID="Label1" runat="server" Text="Nimi:"></asp:Label>
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-        <asp:Label ID="lblCurrency" runat="server" Text="Label"></asp:Label>
-        <asp:Button ID="Button1" runat="server" Text="Välitä parametreinä" />
-        <asp:Button ID="Button2" runat="server" Text="Tallenna Session" />
-        <asp:Button ID="Button3" runat="server" Text="Tallenna Keksiin" />
+        <asp:TextBox ID="txtNimi" runat="server"></asp:TextBox>
+        
+        <asp:Button ID="Button1" runat="server" Text="Välitä parametreinä" OnClick="Button1_Click" />
+        <asp:Button ID="Button2" runat="server" Text="Tallenna Session" OnClick="Button2_Click" />
+        <asp:Button ID="Button3" runat="server" Text="Tallenna Keksiin" OnClick="Button3_Click" />
     </div>
 
 
+     <div><h2><asp:HyperLink ID="linkTehtava2" runat="server" NavigateUrl="~/f6641_tehtava2.aspx">Viikkotehtävä 2</asp:HyperLink></h2></div>
+ 
 
 
 </asp:Content>
