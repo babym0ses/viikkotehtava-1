@@ -6,7 +6,9 @@
     <div>
         <h1>Tuntitehtävää</h1>
         <asp:HyperLink ID="linkKalenteri" runat="server" NavigateUrl="~/f6641_age.aspx">Kalenteri</asp:HyperLink>
- 
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/f6641_gridview.aspx">datacontrol</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/f6641_datacontrols2.aspx">datacontrol</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/f6641_records.aspx">datacontrol</asp:HyperLink>
     </div>
 
     <div>
