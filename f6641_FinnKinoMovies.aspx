@@ -3,11 +3,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
+    <br />
+    <br />
     <asp:Button ID="btnGetTheatres" runat="server" Text="Hae teatterit" OnClick="btnGetTheatres_Click" />
+    <br />
     <asp:ListBox ID="myListBox" runat="server" DataTextField="ID"
         rows="18" OnSelectedIndexChanged="myListBox_SelectedIndexChanged"
         AutoPostBack="true" />
+    <br />
     <asp:XmlDataSource ID="myDataSource" runat="server" XPath="Schedule/Shows/Show" />
     <asp:Repeater ID="myRepeater" runat="server" >
         <ItemTemplate>

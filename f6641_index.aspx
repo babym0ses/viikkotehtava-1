@@ -28,6 +28,9 @@
      <div><h2><asp:HyperLink ID="linkTehtava2" runat="server" NavigateUrl="~/f6641_tehtava2.aspx">Viikkotehtävä 2</asp:HyperLink></h2></div>
  
 
+    <div>
+     <div><h2><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/f6641_ValiPalaute.aspx">TuntiTehtävä: Välipalaute</asp:HyperLink></h2></div>
+    </div>
 
 </asp:Content>
 
